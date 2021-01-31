@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="AmazonTestSuit">
-	<test name="SkipSignInTest">
+	<test name="AmazonAutomation">
 		<packages>
 			<package name="tests" />
 		</packages>
