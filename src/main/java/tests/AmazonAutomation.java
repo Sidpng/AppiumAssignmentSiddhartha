@@ -24,7 +24,7 @@ public class SkipSignIn {
 	
 	@BeforeTest
 	public void setupTest() {
-		reporter = new ExtentReporter("SkipSignInTest");
+		reporter = new ExtentReporter("AmazonAutomation");
 		AmazonDriver.driverInit(reporter);
 	}
 
@@ -36,7 +36,7 @@ public class SkipSignIn {
 	@Test
 	public void appTest() {
 		new SignInPromptPage(reporter).skipLogin();
-		new AmazonHomePage(reporter, "skipSignIn.properties").searchProduct();
+		new AmazonHomePage(reporter, "AmazonAutomation.properties").searchProduct();
 		new ProductsPage(reporter).addToCart();
 		ShoppingCartPage shoppingCart = new ShoppingCartPage(reporter);
 		shoppingCart.gotoCart();
