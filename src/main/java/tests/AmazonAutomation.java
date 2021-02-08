@@ -13,7 +13,7 @@ import utils.AmazonDriver;
 import utils.ExtentReporter;
 import utils.ReporterInterface;
 
-public class SkipSignIn {
+public class AmazonAutomation {
 	//Element declaration
 	protected ReporterInterface reporter;
 
